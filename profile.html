@@ -1,0 +1,92 @@
+<html>
+<head>
+  <title>Login Page</title>
+  <meta charset="utf-8">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--CSS file-->
+  <link href="index.css" rel="stylesheet">
+  <link href="outfitpage.css" rel="stylesheet">
+  <link href="profile.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <a href="index.html" style="text-decoration:none">
+              <div class="backbtn hvr-grow">
+                <div style="font-size: 20px">
+                  Back
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <a href="index.html" style="text-decoration:none" id="title">
+          <div class="navbtn hvr-grow">
+            <div class="brand">
+              Lookbook
+            </div>
+          </div>
+        </a>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="cart.html">
+              <div class="navbtn hvr-grow">
+                Cart
+              </div>
+            </a>
+          </li>
+          <li class="login">
+            <a href="index.html" id="loggedout">
+              <div class="navbtn hvr-grow">
+                Logout
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!--Profile Information-->
+  <div class="container" id="profiletxt">
+    <div id="profiletitle">Profile</div>
+
+    <!--Template for profile information-->
+    <script id="profile-template" type="text/x-handlebars-template">
+        <div class="info" id="name">
+          Name: <div class="txt"> {{name}} </div>
+        </div>
+        <img src="{{profileimg}}"/>
+        <div class="info" id="email">
+          Email: <div class="txt">{{email}}</div>
+        </div>
+        <div class="info" id="address">
+          Shipping Address:
+          <div class="txt">
+            {{street}} <br>
+            {{unit}} <br>
+            {{townzip}}
+          </div>
+        </div>
+    </script>
+
+    <div id="profileinfo">
+        <!-- injected html code for outfits-->
+    </div>
+
+  </div>
+
+
+  <script src="jquery.js"></script>
+  <script src="handlebars-v4.0.12.js"></script>
+  <script src="profile.js"></script>
+</body>
+</html>

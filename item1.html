@@ -1,0 +1,131 @@
+<html>
+<head>
+  <title>Item 1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="outfitpage.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+
+<body>
+  <!-- TOP NAV BAR -->>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <a href="outfit1.html" style="text-decoration:none">
+              <div class="backbtn hvr-grow">
+                <div>
+                  Back
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" style="text-decoration:none">
+              <div class="navbtn hvr-grow">
+                <div class="brand">
+                  Lookbook
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="cart.html">
+              <div class="navbtn hvr-grow">
+                Cart
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="navbtn hvr-grow">
+                Login
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <!--OUTFIT INFO-->
+  <div class="container" id="wholecontainer">
+
+    <!--OUTFIT PHOTO, DESCRIPTION, and ITEMS -->
+    <div class="container" id="outfitcontainer">
+
+      <!--LEFT BLOCK-->
+      <div class="container_on_the_left">
+        <div class="container outfitname">
+            Dress
+        </div>
+        <div class="outfitimg">
+          <img src="https://images.urbanoutfitters.com/is/image/UrbanOutfitters/45466208_018_f?$xlarge$&amp;hei=900&amp;qlt=80&amp;fit=constrain">
+        </div>
+        <div class="info">
+            Information about model: <br>
+            Model size <br>
+            Model height
+        </div>
+      </div>
+
+      <div class="container_on_the_right">
+        <div class="selections">
+          <div class="dropdowns">
+            <div class="size-qty">
+              <label>Size:</label>
+              <select>
+                <option value="0">XS</option>
+                <option value="1">S</option>
+                <option value="2">M</option>
+                <option value="3">L</option>
+                <option value="4">XL</option>
+                <option value="5">XXL</option>
+              </select>
+            </div>
+
+            <div class="size-qty">
+              <label>Quantity</label>
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="addcart">
+            <div>
+              Add to Cart
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <button class ="popup" onClick="myFunction()">Item1
+    <div class="popuptext" id="myPopup">
+      <h4>IMAGE OF GLASSES WITH INFO</h4>
+      <button style="float:right">X</button>
+    </div>
+  </button>-->
+
+<script src="jquery.js"></script>
+<script src="handlebars-v4.0.12.js"></script>
+<script src="outfit.js"></script>
+
+</body>
+</html>

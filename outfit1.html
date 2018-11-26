@@ -1,0 +1,146 @@
+<html>
+<head>
+  <title>Outfit 1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="outfitpage.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+</head>
+
+<body>
+  <!-- TOP NAV BAR -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <a href="index.html" style="text-decoration:none">
+              <div class="backbtn hvr-grow">
+                <div style="font-size: 20px">
+                  Back
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <a href="index.html" style="text-decoration:none" id="title">
+          <div class="navbtn hvr-grow">
+            <div class="brand">
+              Lookbook
+            </div>
+          </div>
+        </a>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="cart.html">
+              <div class="navbtn hvr-grow">
+                Cart
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="login.html" id="loggedin">
+              <div class="navbtn hvr-grow">
+                Login
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <!--OUTFIT INFO-->
+  <div class="container" id="wholecontainer">
+
+    <!--OUTFIT PHOTO, DESCRIPTION, and ITEMS -->
+    <div class="container" id="outfitcontainer">
+
+      <!--LEFT BLOCK-->
+      <div class="container_on_the_left">
+        <div class="container outfitname">
+            Outfit 1
+        </div>
+        <div class="outfitimg">
+          <img src="https://images.urbanoutfitters.com/is/image/UrbanOutfitters/45466208_018_b?$xlarge$&amp;hei=900&amp;qlt=80&amp;fit=constrain">
+        </div>
+        <div class="info">
+            Information about model: <br>
+            Model Height - 5' 6" <br>
+            Dress Size - M
+        </div>
+      </div>
+
+      <!--Template for outfit items-->
+      <script id="item-template" type="text/x-handlebars-template">
+        <div class="item" id="item{{index}}">
+          <div class="itemname">
+            {{itemname}}
+          </div>
+          <div class="itemcost">
+            {{itemcost}}
+          </div>
+          <div class="itemimg">
+
+              <img src="{{itempic}}"/>
+
+          </div>
+
+          <div class="selections">
+            <div class="dropdowns">
+              <div class="size-qty">
+                <label>Size:</label>
+                <select name="item{{index}}size">
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                </select>
+              </div>
+
+              <div class="size-qty">
+                <label>Quantity</label>
+                <select name="item{{index}}qty">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+            <div class="popuptext" id="myPopup{{index}}">
+              Added to Cart!
+            </div>
+            <button class="addcart popup" id="cartitem{{index}}">
+              <!--<div class ="popup">-->
+                Add to Cart
+              <!--</div>-->
+            </button>
+          </div>
+          </div>
+        </div>
+      </script>
+
+      <!--RIGHT BLOCK-->
+      <div class="container_on_the_right" id="templatedItems">
+        <!-- injected html code for items-->
+      </div>
+    </div>
+  </div>
+
+<script src="jquery.js"></script>
+<script src="handlebars-v4.0.12.js"></script>
+<script src="outfit1.js"></script>
+
+</body>
+</html>

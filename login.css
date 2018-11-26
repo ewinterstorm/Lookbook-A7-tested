@@ -1,0 +1,132 @@
+html,body{
+background-image: url('https://images.8tracks.com/cover/i/009/239/735/amazing_pink_clouds_water_sky_nature_hd-wallpaper-1735377-9850.jpg?rect=128,0,1024,1024&q=98&fm=jpg&fit=max');
+background-size: cover;
+background-repeat: no-repeat;
+/*background-position: bottom;*/
+height: 100%;
+font-family: 'Shrikhand', cursive;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+  height: 350px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 500px;
+  background-color: white;
+  opacity: 0.9;
+  /*background-color: rgba(0,0,0,0.8) !important;*/
+}
+
+.input-group-prepend{
+  width: 40px;
+  color: #FFC312;
+}
+
+span {
+  width: 40px;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.glyphicon{
+  line-height: 15px;
+  font-size: 15px;
+  color: black;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #fb819c;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+
+.card-header{
+  color: white;
+  font-size: 40px;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #fb819c;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+}
+
+.remember{
+color: black;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.form-group{
+  margin-top: 20px;
+}
+
+#continue{
+  color: black;
+  font-size: 11px;
+  text-align: center;
+  background-color: #fb819c;
+  width: 200px;
+  height: 30px;
+  vertical-align: center;
+}
+
+#continue:hover{
+  color: black;
+  background-color: #f4b2c8;
+}
+
+.login_btn{
+  background-color: #fb819c;
+  width: 100px;
+  height: 30px;
+}
+
+#loginchange{
+  font-size: 15px;
+  text-align: center;
+}
+
+.login_btn:hover{
+  color: black;
+  background-color: #f4b2c8;
+}
+
+.links{
+  color: black;
+}
+
+.links a{
+  color: #fb819c;
+  margin-left: 4px;
+}

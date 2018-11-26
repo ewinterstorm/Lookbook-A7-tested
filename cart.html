@@ -1,0 +1,105 @@
+<html>
+<head>
+  <title>Cart</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <link href="cart.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- TOP NAV BAR -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <a href="index.html" style="text-decoration:none">
+              <div class="backbtn hvr-grow">
+                <div style="font-size: 20px">
+                  Back
+                </div>
+              </div>
+            </a>
+          </li>
+          </ul>
+          <a href="index.html" style="text-decoration:none" id="title">
+            <div class="navbtn hvr-grow">
+              <div class="brand">
+                Lookbook
+              </div>
+            </div>
+          </a>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="cart.html">
+              <div class="navbtn hvr-grow">
+                Cart
+              </div>
+            </a>
+          </li>
+          <li class="login">
+            <a href="login.html" id="loggedin">
+              <div class="navbtn hvr-grow">
+                Login
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container" id="cartcontainer">
+    <div class="container carttitle">
+        Cart
+        <button class="btn" id="checkoutbtn">
+          Checkout
+        </button>
+    </div>
+
+    <!--Template for cart items-->
+    <script id="cart-template" type="text/x-handlebars-template">
+      <div class="cartitem" id="item{{index}}">
+        <div class='itemimg'>
+          <img src="{{itemimg}}"/>
+        </div>
+        <div>
+          <div class="itemLabel">
+            Item {{index}}
+          </div>
+          <div class=iteminfo>
+            Size: {{itemsize}}
+          </div>
+          <div class=iteminfo>
+            Qty: {{itemqty}}
+          </div>
+          <div class=iteminfo>
+            Price: {{itemcost}}
+          </div>
+          <div class=iteminfo>
+            Shipping time: {{shiptime}} days
+          </div>
+        </div>
+
+        <button class="btn deletebtn" id="deleteitem{{index}}">
+          Delete item
+        </button>
+      </div>
+
+    </script>
+
+    <div class="container" id="templatedCart">
+      <!--injected html code for cart items-->
+    </div>
+
+  </div>
+
+  <script src="handlebars-v4.0.12.js"></script>
+  <script src="jquery.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+#wholecontainer {
+  margin-top: 20px;
+  align-content: center;
+  padding: 0px;
+}
+
+.outfitname{
+  color: black;
+  font-size: 50px;
+  padding: 0px;
+}
+
+#outfitcontainer{
+  align-content: center;
+  padding: 0px;
+  margin-bottom: 50px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+/*---------------OUTFIT IMAGE AND DESCRIPTION TEXT----------*/
+.container_on_the_left {
+  width: 50%;
+  height: 100%;
+  margin:20px;
+  padding:0px;
+}
+
+.outfitimg{
+  width: auto;
+  height: 600px;
+}
+
+.outfitimg img{
+  width: auto;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.info{
+  margin-top: 20px;
+  font-size: 18px;
+  width: auto;
+  height: auto;
+}
+
+/*---------------ITEM IMAGES AND BUTTONS----------*/
+.container_on_the_right {
+  width: 40%;
+  height: 100%;
+  margin: 20px;
+  padding-top: 70px;
+  display: block;
+  align-content: center;
+}
+
+.item{
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.itemname{
+  text-align: left;
+  font-size: 20px;
+  color: black;
+}
+
+.itemcost{
+  text-align: left;
+  font-size: 20px;
+  color: black;
+}
+
+.itemimg{
+  width: 70%;
+  height: 200px;
+  display: block;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  margin-bottom: 10px;
+}
+
+.itemimg img{
+  border-radius: 10px;
+  justify-content: flex-start;
+  /*display: block;
+  margin-left: auto;
+  margin-right: auto;*/
+  height: 100%;
+}
+
+.dropdowns{
+  display: flex;
+}
+
+.selections{
+  display: flex;
+  justify-content: space-between;
+}
+
+.size-qty{
+  padding: 10px;
+}

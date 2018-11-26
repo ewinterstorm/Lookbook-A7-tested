@@ -1,0 +1,218 @@
+/*-------------TOP NAVBAR----------------*/
+body{
+  background-color: #ffe4f4;
+}
+
+div {
+  font-family: 'Shrikhand', cursive;
+}
+
+.menu{
+  color:black;
+  margin: 10px;
+}
+
+.lines{
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+#title{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    display: block;
+    margin-left: -83.5px;
+}
+
+.brand{
+  font-size: 40px;
+  color:black;
+}
+
+.navbtn{
+  font-size: 20px;
+  color:black;
+  text-align: center;
+}
+
+.cartnumber{
+  margin-top: 10px;;
+  margin-bottom: auto;
+}
+
+.backbtn{
+  font-size:13px;
+  color:black;
+  width: 10px;
+  height: 20px;
+}
+
+body {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#main{
+  padding: 0px;
+  margin-left: 0px;
+  margin-right:0px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.grid {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 170px;
+  display: grid;
+  /* spacing between grid items */
+  grid-gap: 100px;
+  /* columns of grid that adjust to screen*/
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  grid-auto-rows: 500px;
+  padding: 50px;
+}
+
+/*-------------OUTFIT TITLES----------------*/
+.outfittile{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.outfit{
+  width: auto;
+  height: 100%;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+
+.outfitLabel {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*-------------HOVER ANIMATION----------------*/
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.1s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.02);
+}
+
+
+/*-------------FILTER NAV MENU----------------*/
+
+.filtertitle{
+  color: white;
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+.delfilters {
+  margin-left: 20px;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 170px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 30px; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.filters div {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*-------------POPUP----------------*/
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    /*padding: 8px 0;*/
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -40px;
+}
+
+
+/* Popup arrow *//*
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) *//*
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 2ms;
+    animation: fadeIn 2ms
+}*/
+
+/*.popup .close {
+  visibility: hidden;
+  -webkit-animation: fadeOut 2ms;
+  animation: fadeOut 2ms;
+}*/
+
+/*Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}

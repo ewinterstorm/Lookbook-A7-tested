@@ -1,0 +1,17 @@
+#profiletxt{
+  margin-top: 50px;
+}
+
+#profiletitle{
+  font-size: 35px;
+}
+
+.info{
+  border-top: 10px;
+  border-bottom: 10px;
+}
+
+.txt{
+  color: #795b71;
+  padding-left: 20px;
+}

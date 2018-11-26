@@ -1,0 +1,54 @@
+#cartcontainer{
+  margin-top: 40px;
+  align-content: center;
+}
+
+#templatedCart{
+  margin-top: 20px;
+  width: 80%;
+}
+
+.carttitle{
+  color:black;
+  font-size: 50px;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+.cartitem{
+  width: 100%;
+  height: 250px;
+  display: flex;
+}
+
+.itemimg{
+  width: 200px;
+  height: 200px;
+}
+
+.cartitem img{
+  width: auto;
+  height: 100%;
+}
+
+.itemLabel{
+  font-size: 30px;
+}
+
+.iteminfo{
+  font-size: 20px;
+}
+
+.deletebtn{
+  padding: 0px;
+  margin-left: 150px;
+  text-align: center;
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+}
+
+#checkoutbtn{
+  margin-top: 50px;
+  float:right;
+}
