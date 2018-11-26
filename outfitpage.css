@@ -102,3 +102,7 @@
 .size-qty{
   padding: 10px;
 }
+
+.btn:hover{
+  background-color: #fb91b2;
+}

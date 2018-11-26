@@ -48,7 +48,27 @@
   font-size: 18px;
 }
 
+.deletebtn:hover{
+  background-color: #fb91b2;
+}
+
 #checkoutbtn{
   margin-top: 50px;
   float:right;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+}
+
+#checkoutbtn:hover{
+  background-color:#fb91b2;
+}
+
+#shopnow{
+  color: #d66c8d;
+  text-decoration: none;
+}
+
+#shopnow:hover{
+  color: #ce3c72;
 }

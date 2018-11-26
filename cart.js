@@ -31,7 +31,7 @@ function initializePage() {
     }
 
     if (newcart.length == 0){
-      $("#templatedCart").text('Your cart is empty!');
+      $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
       $("#checkoutbtn").hide();
     }
 
@@ -194,4 +194,12 @@ function initializePage() {
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item18").hide();
     });
+
+    /*-----------CHECKOUT DELETE CART ITEMS---------------*/
+    $('#checkoutbtn').click(function(e){
+      var empty = [];
+      localStorage.setItem('cart', JSON.stringify(empty));
+    });
+
+    console.log(JSON.parse(localStorage.getItem('cart')));
 }

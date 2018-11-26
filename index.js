@@ -171,4 +171,5 @@ $(".delfilters").click(function(e){
     parentDiv.append(curHtml);
   };
 
+
 }

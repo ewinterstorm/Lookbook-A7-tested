@@ -1,6 +1,7 @@
 /*-------------TOP NAVBAR----------------*/
 body{
   background-color: #ffe4f4;
+  color: black;
 }
 
 div {
@@ -181,6 +182,21 @@ body {
 }
 
 
+.checkoutmessage{
+  margin-top: 70px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+#moreshop{
+  color: #d66c8d;
+  text-decoration: none;
+}
+
+#moreshop:hover{
+  color: #ce3c72;
+}
 /* Popup arrow *//*
 .popup .popuptext::after {
     content: "";
