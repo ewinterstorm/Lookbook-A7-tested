@@ -52,145 +52,235 @@ function initializePage() {
 
     /*-------------------DELETE ITEMS FROM CART-------------------*/
     $('#deleteitem1').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 1;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item1").hide();
     });
 
     $('#deleteitem2').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 2;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item2").hide();
     });
 
     $('#deleteitem3').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 3;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item3").hide();
     });
 
     $('#deleteitem4').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 4;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item4").hide();
     });
 
     $('#deleteitem5').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 5;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item5").hide();
     });
 
     $('#deleteitem6').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 6;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item6").hide();
     });
 
     $('#deleteitem7').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 7;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item7").hide();
     });
 
     $('#deleteitem8').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 8;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item8").hide();
     });
 
     $('#deleteitem9').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 9;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item9").hide();
     });
 
     $('#deleteitem10').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 10;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item10").hide();
     });
 
     $('#deleteitem11').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 11;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item11").hide();
     });
 
     $('#deleteitem12').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 12;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item12").hide();
     });
 
     $('#deleteitem13').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 13;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item13").hide();
     });
 
     $('#deleteitem14').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 14;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item14").hide();
     });
 
     $('#deleteitem15').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 15;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item15").hide();
     });
 
     $('#deleteitem16').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 16;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item16").hide();
     });
 
     $('#deleteitem17').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 17;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item17").hide();
     });
 
     $('#deleteitem18').click(function(e){
-      var delcart = $.grep(newcart, function(e){
+      var delcart = JSON.parse(localStorage.getItem('cart'));
+      delcart = $.grep(delcart, function(e){
         return e.index != 18;
       })
+      if (delcart.length == 0){
+        $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+        $("#checkoutbtn").hide();
+      }
       localStorage.setItem('cart', JSON.stringify(delcart));
       $("#item18").hide();
     });
@@ -201,5 +291,4 @@ function initializePage() {
       localStorage.setItem('cart', JSON.stringify(empty));
     });
 
-    console.log(JSON.parse(localStorage.getItem('cart')));
 }
