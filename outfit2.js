@@ -39,6 +39,10 @@ function initializePage() {
 
   //ITEM1
   var item4size = localStorage.getItem('item4size');
+  if (item4size == null) {
+    item4size = 'XS';
+    localStorage.setItem('item4size', item4size);
+  }
   $('select[name=item4size]').val(item4size);
 
   $('select[name=item4size]').change(function() {
@@ -46,6 +50,10 @@ function initializePage() {
   });
 
   var item4qty = localStorage.getItem('item4qty');
+  if (item4qty == null) {
+    item4qty = '1';
+    localStorage.setItem('item4qty', item4qty);
+  }
   $('select[name=item4qty]').val(item4qty);
 
   $('select[name=item4qty]').change(function() {
@@ -54,6 +62,10 @@ function initializePage() {
 
   //ITEM2
   var item5size = localStorage.getItem('item5size');
+  if (item5size == null) {
+    item5size = 'XS';
+    localStorage.setItem('item5size', item5size);
+  }
   $('select[name=item5size]').val(item5size);
 
   $('select[name=item5size]').change(function() {
@@ -61,6 +73,10 @@ function initializePage() {
   });
 
   var item5qty = localStorage.getItem('item5qty');
+  if (item5qty == null) {
+    item5qty = '1';
+    localStorage.setItem('item5qty', item5qty);
+  }
   $('select[name=item5qty]').val(item5qty);
 
   $('select[name=item5qty]').change(function() {
@@ -69,6 +85,10 @@ function initializePage() {
 
   //ITEM3
   var item6size = localStorage.getItem('item6size');
+  if (item6size == null) {
+    item6size = 'XS';
+    localStorage.setItem('item6size', item6size);
+  }
   $('select[name=item6size]').val(item6size);
 
   $('select[name=item6size]').change(function() {
@@ -76,12 +96,17 @@ function initializePage() {
   });
 
   var item6qty = localStorage.getItem('item6qty');
+  if (item6qty == null) {
+    item6qty = '1';
+    localStorage.setItem('item6qty', item6qty);
+  }
   $('select[name=item6qty]').val(item6qty);
 
   $('select[name=item6qty]').change(function() {
      localStorage.setItem('item6qty', $(this).val());
   });
 
+  /*------------------ADD TO CART BUTTON-----------*/
   var cart = JSON.parse(localStorage.getItem(cart));
 
   $("#item4 .addcart").click(function () {

@@ -38,6 +38,10 @@ function initializePage() {
 
   //item7
   var item7size = localStorage.getItem('item7size');
+  if (item7size == null) {
+    item7size = 'XS';
+    localStorage.setItem('item7size', item7size);
+  }
   $('select[name=item7size]').val(item7size);
 
   $('select[name=item7size]').change(function() {
@@ -45,6 +49,10 @@ function initializePage() {
   });
 
   var item7qty = localStorage.getItem('item7qty');
+  if (item7qty == null) {
+    item7qty = '1';
+    localStorage.setItem('item7qty', item7qty);
+  }
   $('select[name=item7qty]').val(item7qty);
 
   $('select[name=item7qty]').change(function() {
@@ -53,6 +61,10 @@ function initializePage() {
 
   //item8
   var item8size = localStorage.getItem('item8size');
+  if (item8size == null) {
+    item8size = 'XS';
+    localStorage.setItem('item8size', item8size);
+  }
   $('select[name=item8size]').val(item8size);
 
   $('select[name=item8size]').change(function() {
@@ -60,6 +72,10 @@ function initializePage() {
   });
 
   var item8qty = localStorage.getItem('item8qty');
+  if (item8qty == null) {
+    item8qty = '1';
+    localStorage.setItem('item8qty', item8qty);
+  }
   $('select[name=item8qty]').val(item8qty);
 
   $('select[name=item8qty]').change(function() {
@@ -68,6 +84,10 @@ function initializePage() {
 
   //item9
   var item9size = localStorage.getItem('item9size');
+  if (item9size == null) {
+    item9size = 'XS';
+    localStorage.setItem('item9size', item9size);
+  }
   $('select[name=item9size]').val(item9size);
 
   $('select[name=item9size]').change(function() {
@@ -75,15 +95,19 @@ function initializePage() {
   });
 
   var item9qty = localStorage.getItem('item9qty');
+  if (item9qty == null) {
+    item9qty = '1';
+    localStorage.setItem('item9qty', item9qty);
+  }
   $('select[name=item9qty]').val(item9qty);
 
   $('select[name=item9qty]').change(function() {
      localStorage.setItem('item9qty', $(this).val());
   });
 
+
+
   var cart = JSON.parse(localStorage.getItem(cart));
-
-
 
   $("#item7 .addcart").click(function () {
     cart = JSON.parse(localStorage.getItem('cart'));

@@ -38,6 +38,10 @@ function initializePage() {
 
   //item10
   var item10size = localStorage.getItem('item10size');
+  if (item10size == null) {
+    item10size = 'XS';
+    localStorage.setItem('item10size', item10size);
+  }
   $('select[name=item10size]').val(item10size);
 
   $('select[name=item10size]').change(function() {
@@ -45,6 +49,10 @@ function initializePage() {
   });
 
   var item10qty = localStorage.getItem('item10qty');
+  if (item10qty == null) {
+    item10qty = '1';
+    localStorage.setItem('item10qty', item10qty);
+  }
   $('select[name=item10qty]').val(item10qty);
 
   $('select[name=item10qty]').change(function() {
@@ -53,6 +61,10 @@ function initializePage() {
 
   //item11
   var item11size = localStorage.getItem('item11size');
+  if (item11size == null) {
+    item11size = 'XS';
+    localStorage.setItem('item11size', item11size);
+  }
   $('select[name=item11size]').val(item11size);
 
   $('select[name=item11size]').change(function() {
@@ -60,6 +72,10 @@ function initializePage() {
   });
 
   var item11qty = localStorage.getItem('item11qty');
+  if (item11qty == null) {
+    item11qty = '1';
+    localStorage.setItem('item11qty', item11qty);
+  }
   $('select[name=item11qty]').val(item11qty);
 
   $('select[name=item11qty]').change(function() {
@@ -68,6 +84,10 @@ function initializePage() {
 
   //item12
   var item12size = localStorage.getItem('item12size');
+  if (item12size == null) {
+    item12size = 'XS';
+    localStorage.setItem('item12size', item12size);
+  }
   $('select[name=item12size]').val(item12size);
 
   $('select[name=item12size]').change(function() {
@@ -75,15 +95,19 @@ function initializePage() {
   });
 
   var item12qty = localStorage.getItem('item12qty');
+  if (item12qty == null) {
+    item12qty = '1';
+    localStorage.setItem('item12qty', item12qty);
+  }
   $('select[name=item12qty]').val(item12qty);
 
   $('select[name=item12qty]').change(function() {
      localStorage.setItem('item12qty', $(this).val());
   });
 
+
+
   var cart = JSON.parse(localStorage.getItem(cart));
-
-
 
   $("#item10 .addcart").click(function () {
     cart = JSON.parse(localStorage.getItem('cart'));
