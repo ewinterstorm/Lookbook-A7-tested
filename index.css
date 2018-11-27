@@ -1,6 +1,18 @@
 /*-------------TOP NAVBAR----------------*/
+.brand:hover{
+  color:#fb91b2;
+}
+
+.navbtn:hover{
+  color:#fb91b2;
+}
+
+.backbtn:hover{
+  color:#fb91b2;
+}
+
 body{
-  background-color: #ffe4f4;
+  background-color: #ffd9e6;
   color: black;
 }
 

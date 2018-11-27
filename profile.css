@@ -1,3 +1,7 @@
+body{
+  color: black;
+}
+
 #profiletxt{
   margin-top: 50px;
 }
@@ -6,12 +10,18 @@
   font-size: 35px;
 }
 
+#profileinfo{
+  padding-left: 50px;
+}
+
 .info{
   border-top: 10px;
   border-bottom: 10px;
+  font-size: 25px;
 }
 
 .txt{
-  color: #795b71;
+  color: #ce3c72;
   padding-left: 20px;
+  font-size: 20px;
 }
