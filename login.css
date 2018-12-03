@@ -96,10 +96,10 @@ margin-right: 5px;
   font-size: 14px;
   text-align: center;
   background-color: #fb819c;
-  width: 200px;
-  height: 30px;
-  margin-top: 5px;
-  border-top-width: 2px;
+  width: 180px;
+  height: 60%;
+  border: 0px;
+  padding: 2px;
 }
 
 #continue:hover{
@@ -135,4 +135,25 @@ a:not([href]):not([tabindex]) {
 .links a{
   color: #fb819c;
   margin-left: 4px;
+  height: 50%;
+}
+
+.card-footer{
+  height: 44px;
+}
+
+span{
+  height: 100%;
+  width: auto;
+}
+
+.txt{
+  padding-top: 2px;
+  padding-bottom: 2px;
+  line-height: 25px;
+}
+
+.or{
+  padding-left: 4px;
+  padding-right: 4px;
 }

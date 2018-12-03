@@ -27,8 +27,8 @@
           </li>
         </ul>
         <a href="index.html" style="text-decoration:none" id="title">
-          <div class="navbtn hvr-grow">
-            <div class="brand">
+          <div class="navbtn">
+            <div class="brand hvr-grow">
               Lookbook
             </div>
           </div>
@@ -75,7 +75,7 @@
             Information about model: <br>
             Model Height - 5' 5" <br>
             Top Size - S <br>
-            Skirt Size - M 
+            Skirt Size - M
         </div>
       </div>
 
@@ -96,7 +96,7 @@
 
           <div class="selections">
             <div class="dropdowns">
-              <div class="size-qty">
+              <div class="size-qty" id="item{{index}}size">
                 <label>Size:</label>
                 <select name="item{{index}}size">
                   <option value="XS">XS</option>
@@ -125,7 +125,7 @@
             <div class="popuptext" id="myPopup{{index}}">
               Added to Cart!
             </div>
-            <button class="addcart popup" id="cartitem{{index}}">
+            <button class="addcart popup btn" id="cartitem{{index}}">
               <!--<div class ="popup">-->
                 Add to Cart
               <!--</div>-->

@@ -4,7 +4,7 @@
 }
 
 #templatedCart{
-  margin-top: 20px;
+  margin-top: 0px;
   width: 80%;
 }
 
@@ -12,7 +12,31 @@
   color:black;
   font-size: 50px;
   padding: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  height: 60px;
+  display: flex;
+  width: auto;
+  border-bottom: 2px solid black
+}
+
+.del{
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#delall{
+  margin-left: auto;
+  margin-right: 25px;
+}
+
+#delall:hover{
+  background-color: #fb91b2;
+}
+
+.container{
+  width: 80%;
 }
 
 .cartitem{
@@ -37,11 +61,13 @@
 
 .iteminfo{
   font-size: 20px;
+  margin-left: 50px;
 }
 
 .deletebtn{
   padding: 0px;
-  margin-left: 150px;
+  margin-left: auto;
+  margin-right: 45px;
   text-align: center;
   width: 120px;
   height: 40px;
@@ -53,11 +79,15 @@
 }
 
 #checkoutbtn{
-  margin-top: 50px;
-  float:right;
+  margin-top: 12px;
+  margin-right: 0px;
+  margin-left: auto;
+  float: right;
   background-color: white;
+  height: 35px;
   color: black;
   font-size: 20px;
+  line-height: 20px;
 }
 
 #checkoutbtn:hover{

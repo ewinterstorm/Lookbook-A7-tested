@@ -37,7 +37,7 @@ function initializePage() {
 
   /*-------------------ADD TO CART-------------------*/
 
-  //ITEM1
+  //ITEM4
   var item4size = localStorage.getItem('item4size');
   if (item4size == null) {
     item4size = 'XS';
@@ -60,7 +60,7 @@ function initializePage() {
      localStorage.setItem('item4qty', $(this).val());
   });
 
-  //ITEM2
+  //ITEM5
   var item5size = localStorage.getItem('item5size');
   if (item5size == null) {
     item5size = 'XS';
@@ -83,7 +83,7 @@ function initializePage() {
      localStorage.setItem('item5qty', $(this).val());
   });
 
-  //ITEM3
+  //ITEM6
   var item6size = localStorage.getItem('item6size');
   if (item6size == null) {
     item6size = 'XS';
@@ -95,7 +95,7 @@ function initializePage() {
      localStorage.setItem('item6size', $(this).val());
   });
 
-  var item6qty = localStorage.getItem('item6qty');
+  /*var item6qty = localStorage.getItem('item6qty');
   if (item6qty == null) {
     item6qty = '1';
     localStorage.setItem('item6qty', item6qty);
@@ -104,7 +104,8 @@ function initializePage() {
 
   $('select[name=item6qty]').change(function() {
      localStorage.setItem('item6qty', $(this).val());
-  });
+  });*/
+  $('#item6size').hide();
 
   /*------------------ADD TO CART BUTTON-----------*/
   var cart = JSON.parse(localStorage.getItem(cart));

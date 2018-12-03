@@ -26,8 +26,8 @@
           </li>
           </ul>
           <a href="index.html" style="text-decoration:none" id="title">
-            <div class="navbtn hvr-grow">
-              <div class="brand">
+            <div class="navbtn">
+              <div class="brand hvr-grow">
                 Lookbook
               </div>
             </div>
@@ -55,10 +55,10 @@
 
   <div class="container" id="cartcontainer">
     <div class="container carttitle">
-        Cart
-        <a href="checkout.html" class="btn" id="checkoutbtn">
-        Checkout
-        </a>
+          <h1>Cart</h1>
+          <a href="checkout.html" class="btn" id="checkoutbtn">
+          Checkout
+          </a>
     </div>
 
     <!--Template for cart items-->
@@ -71,16 +71,16 @@
           <div class="itemLabel">
             Item {{index}}
           </div>
-          <div class=iteminfo>
+          <div class="iteminfo" id="item{{index}}size">
             Size: {{itemsize}}
           </div>
-          <div class=iteminfo>
+          <div class="iteminfo">
             Qty: {{itemqty}}
           </div>
-          <div class=iteminfo>
+          <div class="iteminfo">
             Price: {{itemcost}}
           </div>
-          <div class=iteminfo>
+          <div class="iteminfo">
             Shipping time: {{shiptime}} days
           </div>
         </div>
@@ -89,10 +89,12 @@
           Delete item
         </button>
       </div>
-
     </script>
 
     <div class="container" id="templatedCart">
+      <div class="del">
+      <button class='btn' id="delall"> Delete All Items</button>
+      </div>
       <!--injected html code for cart items-->
     </div>
 

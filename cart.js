@@ -17,6 +17,10 @@ function initializePage() {
 
   /*-------------------CART TEMPLATE-------------------*/
     var newcart = JSON.parse(localStorage.getItem('cart'));
+    var checkcart = JSON.parse(localStorage.getItem('checkoutcart'));
+    if (checkcart == null){
+      checkcart == [];
+    }
 
     if (newcart == null) {
       newcart = [];
@@ -49,6 +53,14 @@ function initializePage() {
       var curHtml= template(curData);
       parentDiv.append(curHtml);
     };
+
+    $('#item2size').hide();
+    $('#item3size').hide();
+    $('#item6size').hide();
+    $('#item12size').hide();
+    $('#item15size').hide();
+    $('#item18size').hide();
+
 
     /*-------------------DELETE ITEMS FROM CART-------------------*/
     $('#deleteitem1').click(function(e){
@@ -285,8 +297,35 @@ function initializePage() {
       $("#item18").hide();
     });
 
+    $('#delall').click(function(e){
+      var delcart = [];
+      localStorage.setItem('cart', JSON.stringify(delcart));
+      $("#item1").hide();
+      $("#item2").hide();
+      $("#item3").hide();
+      $("#item4").hide();
+      $("#item5").hide();
+      $("#item6").hide();
+      $("#item7").hide();
+      $("#item8").hide();
+      $("#item9").hide();
+      $("#item10").hide();
+      $("#item11").hide();
+      $("#item12").hide();
+      $("#item13").hide();
+      $("#item14").hide();
+      $("#item15").hide();
+      $("#item16").hide();
+      $("#item17").hide();
+      $("#item18").hide();
+      $("#templatedCart").html("<span style='font-size: 30px'>Your cart is empty! <br> <a href='index.html' id='shopnow'> Shop now </a></span>");
+      $("#checkoutbtn").hide();
+    });
+
     /*-----------CHECKOUT DELETE CART ITEMS---------------*/
     $('#checkoutbtn').click(function(e){
+      //var cart = JSON.parse(localStorage.getItem(cart));
+      //localStorage.setItem('checkoutcart', JSON.stringify(cart));
       var empty = [];
       localStorage.setItem('cart', JSON.stringify(empty));
     });

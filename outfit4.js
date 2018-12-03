@@ -83,7 +83,7 @@ function initializePage() {
   });
 
   //item12
-  var item12size = localStorage.getItem('item12size');
+  /*var item12size = localStorage.getItem('item12size');
   if (item12size == null) {
     item12size = 'XS';
     localStorage.setItem('item12size', item12size);
@@ -92,7 +92,8 @@ function initializePage() {
 
   $('select[name=item12size]').change(function() {
      localStorage.setItem('item12size', $(this).val());
-  });
+  });*/
+  $('#item12size').hide();
 
   var item12qty = localStorage.getItem('item12qty');
   if (item12qty == null) {
